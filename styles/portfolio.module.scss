@@ -1,0 +1,10 @@
+@import '../styles/variables';
+
+.container {
+	margin-left: 10vw;
+	height: 100vh;
+
+	@media screen and (max-width: 1000px) {
+		margin-left: 0;
+	}
+}

@@ -8,6 +8,7 @@
 	right: 90%;
 	background-color: rgba(24, 24, 24, 0.5);
 	backdrop-filter: blur(0.5rem);
+	z-index: 6;
 
 	@media screen and (max-width: 1000px) {
 		display: none;

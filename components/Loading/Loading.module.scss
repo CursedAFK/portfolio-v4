@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.container {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #1d1d1d;
+	z-index: 5;
+
+	h1 {
+		font-size: 3vw;
+		font-weight: 600;
+		color: $secondaryColor;
+		text-shadow: 0.3vw 0 0 $primaryColor;
+
+		@media screen and (max-width: 1000px) {
+			font-size: 12vw;
+			text-shadow: 1.2vw 0 0 $primaryColor;
+		}
+	}
+
+	h2 {
+		font-size: 0.9vw;
+		font-weight: 500;
+		margin-top: -0.5vw;
+
+		@media screen and (max-width: 1000px) {
+			font-size: 3vw;
+			margin-top: -1.5vw;
+		}
+	}
+
+	p {
+		font-size: 0.8vw;
+		letter-spacing: 0.3vw;
+		opacity: 0.5;
+		margin-top: 0.5vw;
+
+		@media screen and (max-width: 1000px) {
+			font-size: 2.8vw;
+			letter-spacing: 0.4vw;
+			margin-top: 1.5vw;
+		}
+	}
+
+	.subContainer {
+		width: 35vw;
+		height: 0.15vw;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 10vw;
+		margin-top: 2vw;
+
+		@media screen and (max-width: 1000px) {
+			width: 75vw;
+			height: 0.3vw;
+			background-color: rgba(0, 0, 0, 0.5);
+			margin-top: 7vw;
+		}
+
+		.progress {
+			width: 0;
+			height: 100%;
+			border-radius: 10vw;
+			background-image: linear-gradient(
+				to right,
+				$secondaryColor 40%,
+				$primaryColor 100%
+			);
+		}
+	}
+}
