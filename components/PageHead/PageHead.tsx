@@ -24,6 +24,22 @@ const PageHead = ({ pageTitle = 'AL | Front End Developer' }: Props) => {
 				rel='icon'
 				href='/logo.png'
 			/>
+			<meta
+				property='og:title'
+				content={pageTitle}
+			/>
+			<meta
+				property='og:description'
+				content='As a frontend developer, I specialize in creating responsive and user-friendly websites using HTML, CSS, and JavaScript. Browse my portfolio to see my latest projects and learn more about my skills and experience. Contact me to discuss your web development needs today.'
+			/>
+			<meta
+				property='og:image'
+				content='https://www.trackstack.xyz/images/preview.jpg'
+			/>
+			<meta
+				property='og:url'
+				content='https://www.trackstack.xyz'
+			/>
 		</Head>
 	)
 }
