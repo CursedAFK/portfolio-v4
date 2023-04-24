@@ -34,11 +34,11 @@ const PageHead = ({ pageTitle = 'AL | Front End Developer' }: Props) => {
 			/>
 			<meta
 				property='og:image'
-				content='https://www.trackstack.xyz/images/preview.jpg'
+				content='https://portfolio-v4-red.vercel.app/images/screenshot.jpg'
 			/>
 			<meta
 				property='og:url'
-				content='https://www.trackstack.xyz'
+				content='https://portfolio-v4-red.vercel.app/'
 			/>
 		</Head>
 	)
