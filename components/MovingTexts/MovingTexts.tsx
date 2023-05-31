@@ -9,6 +9,7 @@ const wordsArr = [
 	'Tailwind CSS',
 	'Typescript',
 	'Next.js',
+	'React Native',
 	'Chakra UI',
 	'Three.js',
 	'React Three Fiber',
@@ -99,10 +100,7 @@ const Scene = () => {
 				onPointerUp={() => setIsClicked(false)}
 			>
 				{words.map(([pos, word], index) => (
-					<Word
-						key={index}
-						position={pos as THREE.Vector3}
-					>
+					<Word key={index} position={pos as THREE.Vector3}>
 						{word as string}
 					</Word>
 				))}

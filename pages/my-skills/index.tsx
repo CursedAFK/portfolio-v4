@@ -41,6 +41,12 @@ const skills = [
 		title: 'Three Js',
 		proficiency: 50,
 		mood: '#ADD8E6'
+	},
+	{
+		id: 7,
+		title: 'React Native',
+		proficiency: 35,
+		mood: '#7952B3'
 	}
 ]
 

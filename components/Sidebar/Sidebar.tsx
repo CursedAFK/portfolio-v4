@@ -42,10 +42,7 @@ const Sidebar = () => {
 					className={`${styles.container} ${isModalOpen && styles.mobile}`}
 				>
 					<header>
-						<Link
-							href='/'
-							onClick={closeModal}
-						>
+						<Link href='/' onClick={closeModal}>
 							<h1>A</h1>
 							<h2>
 								Abdul
@@ -61,11 +58,7 @@ const Sidebar = () => {
 					<nav>
 						<ul>
 							{pages.map(page => (
-								<SidebarLink
-									key={page.id}
-									{...page}
-									closeModal={closeModal}
-								/>
+								<SidebarLink key={page.id} {...page} closeModal={closeModal} />
 							))}
 						</ul>
 					</nav>
@@ -80,18 +73,12 @@ const Sidebar = () => {
 									<FaLinkedinIn />
 								</li>
 							</Link>
-							<Link
-								href='https://github.com/CursedAFK'
-								target='_blank'
-							>
+							<Link href='https://github.com/CursedAFK' target='_blank'>
 								<li>
 									<FaGithub />
 								</li>
 							</Link>
-							<Link
-								href='https://twitter.com/AbdulRLass'
-								target='_blank'
-							>
+							<Link href='https://twitter.com/Rinn68' target='_blank'>
 								<li>
 									<FaTwitter />
 								</li>
